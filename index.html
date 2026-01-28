@@ -5,20 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skillzyra | Learn. Earn. Grow</title>
 
-<!-- SEO Meta -->
-<meta name="description" content="Skillzyra: AI Powered CV / Resume making, Photo Editing. Apply Now!">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Skillzyra: AI Powered CV / Resume making, Photo Editing. Professional CV for ₹30–₹50. Apply Now!">
 <meta name="keywords" content="AI CV, Resume, Skillzyra, CV Making, Photo Editing">
 <meta name="author" content="Shambhunath Mahanta">
 <meta name="robots" content="index, follow">
 
-<!-- Google Site Verification -->
+<!-- ✅ GOOGLE SEARCH CONSOLE VERIFICATION -->
 <meta name="google-site-verification" content="861evAD2Lo25AWHI1Qyw1SD-GWjwnSjYpB-QoxtQICc" />
 
-<!-- Sitemap -->
+<!-- ✅ SITEMAP LINK -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://username.github.io/skillzyra/sitemap.xml">
 
 <!-- Favicon -->
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
 body{margin:0;font-family:Arial, Helvetica, sans-serif;background:#0f172a;color:#e5e7eb;}
@@ -27,33 +27,14 @@ header h1{font-size:42px;margin-bottom:10px;}
 header p{font-size:18px;opacity:.9;}
 section{max-width:1000px;margin:auto;padding:40px 20px;}
 .box{background:#111827;padding:20px;margin:15px 0;border-radius:14px;}
-.box h3{color:#60a5fa;margin-top:0;}
+.box h3{margin-top:0;color:#60a5fa;}
 .price{font-size:20px;color:#22c55e;font-weight:bold;}
 .btn{display:inline-block;margin-top:15px;padding:12px 26px;background:#22c55e;color:#000;text-decoration:none;border-radius:30px;font-weight:bold;}
 .btn:hover{background:#16a34a;}
 footer{background:#020617;text-align:center;padding:20px;font-size:14px;}
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
-.pay img{width:200px;margin:10px 0;}
+img.qr{width:150px;margin-top:10px;}
 </style>
-
-<script>
-// Function to check payment before showing form
-function showForm(formId, qrId){
-  const qr = document.getElementById(qrId);
-  const form = document.getElementById(formId);
-  qr.style.display = "block";
-  form.style.display = "none";
-}
-
-function confirmPayment(formId, qrId){
-  const qr = document.getElementById(qrId);
-  const form = document.getElementById(formId);
-  alert("Payment confirmed! Now you can submit your form.");
-  qr.style.display = "none";
-  form.style.display = "block";
-}
-</script>
-
 </head>
 
 <body>
@@ -70,39 +51,39 @@ function confirmPayment(formId, qrId){
 <p>AI based professional CV for Freshers & Experienced.</p>
 <p class="price">₹30 – ₹50</p>
 
-<!-- Payment QR -->
-<div class="pay" id="qr_resume" style="display:block;">
-<p>Scan QR to Pay:</p>
-<img src="assets/qr_resume.png" alt="Resume Payment QR">
-<br>
-<button class="btn" onclick="confirmPayment('form_resume','qr_resume')">I have Paid</button>
-</div>
+<!-- Payment + Form -->
+<p>Step 1: Make Payment via any QR below</p>
+<img src="image/qr-gpay.png" alt="Google Pay QR" class="qr">
+<img src="image/qr-phonepe.png" alt="PhonePe QR" class="qr">
+<img src="image/qr-paytm.png" alt="Paytm QR" class="qr">
 
-<!-- Google Form -->
-<iframe id="form_resume" src="https://docs.google.com/forms/d/e/1FAIpQLScXCTAUBizy7rS6U90r1leU_wYEswjlXkHwP1el2xvdbQaeDQ/viewform?usp=dialog" style="width:100%;height:600px;border:none;display:none;"></iframe>
+<p>Step 2: After payment, submit your document:</p>
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScXCTAUBizy7rS6U90r1leU_wYEswjlXkHwP1el2xvdbQaeDQ/viewform?usp=dialog" target="_blank">
+Submit CV / Resume
+</a>
 </div>
 
 <div class="box">
-<h3>Photo Editing</h3>
-<p>Upload your photo for editing.</p>
+<h3>Photo Editing & Instagram Help</h3>
+<p>Profile photo edit, basic Instagram guidance.</p>
+<p class="price">₹30 – ₹50</p>
 
-<!-- Payment QR -->
-<div class="pay" id="qr_photo" style="display:block;">
-<p>Scan QR to Pay:</p>
-<img src="assets/qr_photo.png" alt="Photo Editing Payment QR">
-<br>
-<button class="btn" onclick="confirmPayment('form_photo','qr_photo')">I have Paid</button>
+<!-- Payment + Form -->
+<p>Step 1: Make Payment via any QR below</p>
+<img src="image/qr-gpay.png" alt="Google Pay QR" class="qr">
+<img src="image/qr-phonepe.png" alt="PhonePe QR" class="qr">
+<img src="image/qr-paytm.png" alt="Paytm QR" class="qr">
+
+<p>Step 2: After payment, submit your photo:</p>
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScdAN_x0MMuJNXJGhxJveZlo5VLz1DICitNaJnE3HnYNK26rA/viewform?usp=dialog" target="_blank">
+Submit Photo
+</a>
 </div>
-
-<!-- Google Form -->
-<iframe id="form_photo" src="https://docs.google.com/forms/d/e/1FAIpQLScdAN_x0MMuJNXJGhxJveZlo5VLz1DICitNaJnE3HnYNK26rA/viewform?usp=dialog" style="width:100%;height:600px;border:none;display:none;"></iframe>
-</div>
-
 </section>
 
 <footer>
 © 2026 Skillzyra<br>
-Owner: Shambhunath Mahanta<br>
+Owner: <b>Shambhunath Mahanta</b><br>
 Contact: 7008956984
 </footer>
 
