@@ -6,8 +6,8 @@
 <title>Skillzyra | Learn. Earn. Grow</title>
 
 <!-- SEO Meta Tags -->
-<meta name="description" content="Skillzyra: AI Powered CV / Resume making, Photo Editing. Professional CV for ₹30–₹50. Apply Now!">
-<meta name="keywords" content="AI CV, Resume, Skillzyra, CV Making, Photo Editing">
+<meta name="description" content="Skillzyra: AI Powered CV / Resume making, Photo Editing, Online Forms, Skill Guides. Professional CV for ₹30–₹50. Apply Now!">
+<meta name="keywords" content="AI CV, Resume, Skillzyra, CV Making, Digital Services, Photo Editing, Job Forms, Skill Guides">
 <meta name="author" content="Shambhunath Mahanta">
 <meta name="robots" content="index, follow">
 
@@ -17,7 +17,12 @@
 <!-- ✅ SITEMAP LINK -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://username.github.io/skillzyra/sitemap.xml">
 
-<!-- Favicon -->
+<!-- Open Graph -->
+<meta property="og:title" content="Skillzyra | Learn. Earn. Grow">
+<meta property="og:description" content="Professional AI powered CV / Resume, Photo Editing, Online Forms, Skill Guides. Apply Now!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://username.github.io/skillzyra/">
+
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
@@ -33,8 +38,20 @@ section{max-width:1000px;margin:auto;padding:40px 20px;}
 .btn:hover{background:#16a34a;}
 footer{background:#020617;text-align:center;padding:20px;font-size:14px;}
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
-img.qr{width:150px;margin-top:10px;}
 </style>
+
+<script>
+function showForm(service){
+  if(service === 'resume'){
+    document.getElementById('paymentResume').style.display = 'none';
+    document.getElementById('formResume').style.display = 'block';
+  } else if(service === 'photo'){
+    document.getElementById('paymentPhoto').style.display = 'none';
+    document.getElementById('formPhoto').style.display = 'block';
+  }
+}
+</script>
+
 </head>
 
 <body>
@@ -46,39 +63,56 @@ img.qr{width:150px;margin-top:10px;}
 </header>
 
 <section>
+<!-- Resume / CV Section -->
 <div class="box">
 <h3>Resume / CV Making</h3>
 <p>AI based professional CV for Freshers & Experienced.</p>
 <p class="price">₹30 – ₹50</p>
 
-<!-- Payment + Form -->
-<p>Step 1: Make Payment via any QR below</p>
-<img src="image/qr-gpay.png" alt="Google Pay QR" class="qr">
-<img src="image/qr-phonepe.png" alt="PhonePe QR" class="qr">
-<img src="image/qr-paytm.png" alt="Paytm QR" class="qr">
-
-<p>Step 2: After payment, submit your document:</p>
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScXCTAUBizy7rS6U90r1leU_wYEswjlXkHwP1el2xvdbQaeDQ/viewform?usp=dialog" target="_blank">
-Submit CV / Resume
-</a>
+<div id="paymentResume">
+  <p>Pay first using below QR codes:</p>
+  <img src="image/qr-gpay.png" alt="Google Pay QR" style="width:150px;">
+  <img src="image/qr-phonepe.png" alt="PhonePe QR" style="width:150px;">
+  <img src="image/qr-paytm.png" alt="Paytm QR" style="width:150px;">
+  <br><br>
+  <button class="btn" onclick="showForm('resume')">I Paid, Show Form</button>
 </div>
 
+<div id="formResume" style="display:none;">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXCTAUBizy7rS6U90r1leU_wYEswjlXkHwP1el2xvdbQaeDQ/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</div>
+
+<!-- Photo Editing Section -->
 <div class="box">
 <h3>Photo Editing & Instagram Help</h3>
-<p>Profile photo edit, basic Instagram guidance.</p>
-<p class="price">₹30 – ₹50</p>
+<p>Upload your photo after payment:</p>
 
-<!-- Payment + Form -->
-<p>Step 1: Make Payment via any QR below</p>
-<img src="image/qr-gpay.png" alt="Google Pay QR" class="qr">
-<img src="image/qr-phonepe.png" alt="PhonePe QR" class="qr">
-<img src="image/qr-paytm.png" alt="Paytm QR" class="qr">
-
-<p>Step 2: After payment, submit your photo:</p>
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScdAN_x0MMuJNXJGhxJveZlo5VLz1DICitNaJnE3HnYNK26rA/viewform?usp=dialog" target="_blank">
-Submit Photo
-</a>
+<div id="paymentPhoto">
+  <img src="image/qr-gpay.png" alt="Google Pay QR" style="width:150px;">
+  <img src="image/qr-phonepe.png" alt="PhonePe QR" style="width:150px;">
+  <img src="image/qr-paytm.png" alt="Paytm QR" style="width:150px;">
+  <br><br>
+  <button class="btn" onclick="showForm('photo')">I Paid, Upload Photo</button>
 </div>
+
+<div id="formPhoto" style="display:none;">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdAN_x0MMuJNXJGhxJveZlo5VLz1DICitNaJnE3HnYNK26rA/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center;color:#60a5fa;">Sample Reviews</h2>
+<div class="box testimonial">
+<div>“Got interview calls after using this CV.” – Rohan</div>
+<div>“Professional & affordable service.” – Priya</div>
+<div>“Best CV in low price.” – Amit</div>
+</div>
+</section>
+
+<section>
+<a class="btn" href="https://wa.me/7008956984" target="_blank">Contact on WhatsApp</a>
 </section>
 
 <footer>
